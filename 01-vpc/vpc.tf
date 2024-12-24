@@ -1,7 +1,7 @@
  module "vpc" {
 
-   #source = "../7.1.terraform-aws-vpc-peering"
-   source = "git::https://github.com/linga-daws-78s/7.1.terraform-aws-vpc-peering.git?ref=main"
+   #source = "../5.9.terraform-aws-vpc-peering"
+   source = "git::https://github.com/Lingaiahthammisetti/5.9.terraform-aws-vpc-peering.git?ref=main"
 
     #These variables values must given by module users. 
     project_name = var.project_name

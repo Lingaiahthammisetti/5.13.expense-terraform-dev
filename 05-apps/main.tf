@@ -44,7 +44,10 @@ module "ansible" {
     #Convert StringList to list and get first element
     #subnet_id = element(split(",",data.aws_ssm_parameter.public_subnet_ids.value),0)
     subnet_id = local.public_subnet_id
-    user_data = file("expense.sh")
+    #user_data = file("expense.sh")
+    user_data = file("${path.module}/expense.sh")
+
+
 
     ami   = data.aws_ami.ami_info.id
     tags =merge(

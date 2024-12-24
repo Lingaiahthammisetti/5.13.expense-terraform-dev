@@ -2,7 +2,7 @@
 #Second attaching dependent ports to security group using aws Security group rule
 
 module "db" {
-source ="../../10.terraform-aws-securitygroup"
+source ="../../5.12.terraform-aws-securitygroup"
 project_name = var.project_name
 environment =  var.environment
 sg_description = "SG for DB MySQL Instances"
@@ -11,7 +11,7 @@ common_tags = var.common_tags
 sg_name = "db"
 }
 module "backend" {
-source ="../../10.terraform-aws-securitygroup"
+source ="../../5.12.terraform-aws-securitygroup"
 project_name = var.project_name
 environment =  var.environment
 sg_description = "SG for Backend Instances"
@@ -20,7 +20,7 @@ common_tags = var.common_tags
 sg_name = "backend"
 }
 module "frontend" {
-source ="../../10.terraform-aws-securitygroup"
+source ="../../5.12.terraform-aws-securitygroup"
 project_name = var.project_name
 environment =  var.environment
 sg_description = "SG for Frontend Instances"
@@ -29,7 +29,7 @@ common_tags = var.common_tags
 sg_name = "frontend"
 }
 module "bastion" {
-source ="../../10.terraform-aws-securitygroup"
+source ="../../5.12.terraform-aws-securitygroup"
 project_name = var.project_name
 environment =  var.environment
 sg_description = "SG for Bastion Instances"
@@ -38,7 +38,7 @@ common_tags = var.common_tags
 sg_name = "bastion"
 }
 module "ansible" {
-source ="../../10.terraform-aws-securitygroup"
+source ="../../5.12.terraform-aws-securitygroup"
 project_name = var.project_name
 environment =  var.environment
 sg_description = "SG for ansible Instances"
