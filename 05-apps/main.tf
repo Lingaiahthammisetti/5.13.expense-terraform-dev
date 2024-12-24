@@ -47,8 +47,6 @@ module "ansible" {
     #user_data = file("expense.sh")
     user_data = file("${path.module}/expense.sh")
 
-
-
     ami   = data.aws_ami.ami_info.id
     tags =merge(
         var.common_tags,
