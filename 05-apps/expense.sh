@@ -7,7 +7,7 @@ cd /tmp
 
 git clone https://github.com/Lingaiahthammisetti/4.10.expense-ansible-roles-tf.git
 cd 4.10.expense-ansible-roles-tf
-ansible-playbook main.yaml -e component=backend -e login_password=EExpenseApp@1
+ansible-playbook main.yaml -e component=backend -e login_password=ExpenseApp1
 ansible-playbook main.yaml -e component=frontend
 
 
