@@ -4,9 +4,11 @@
 dnf install ansible -y
 cd /tmp
 #git clone https://github.com/linga-daws-78s/expense-ansible-roles-3.git
-git clone https://github.com/Lingaiahthammisetti/4.10.expense-ansible-roles-tf.git
 
+git clone https://github.com/Lingaiahthammisetti/4.10.expense-ansible-roles-tf.git
 cd 4.10.expense-ansible-roles-tf
-ansible-playbook main.yaml -e component=backend -e env=dev -e login_password=ExpenseApp1
-ansible-playbook main.yaml -e component=frontend -e env=dev
+ansible-playbook main.yaml -e component=backend -e login_password=EExpenseApp@1
+ansible-playbook main.yaml -e component=frontend
+
+
 
