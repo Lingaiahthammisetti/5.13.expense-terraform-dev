@@ -77,16 +77,17 @@ module "records" {
       type    = "A"
        ttl     = 1
       records = [
-        module.frontend.private_ip
-      ]
-    },
-     {
-      name    = "" # we will get here public ip i.e lingaiah.online
-      type    = "A"
-       ttl     = 1
-      records = [
         module.frontend.public_ip
       ]
     }
+    # ,
+    #  {
+    #   name    = "" # we will get here public ip i.e lingaiah.online
+    #   type    = "A"
+    #    ttl     = 1
+    #   records = [
+    #     module.frontend.public_ip
+    #   ]
+    # }
   ]
 }
