@@ -6,10 +6,10 @@ terraform {
     }
   }
 backend "s3" {
-  bucket ="expense-terraform-dev-remote-state"
+  bucket ="expense-terraform-dev"
   key="expense-terraform-dev-sg"
   region="us-east-1"
-  dynamodb_table="expense-terraform-dev-remote-state-locking"
+  dynamodb_table="expense-terraform-dev"
   }
 }
 
